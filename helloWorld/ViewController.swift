@@ -9,17 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var favoriteClass: UILabel!
+    @IBOutlet weak var pushIt: UIButton!
+    @IBOutlet weak var seeIt: UIImageView!
+    @IBOutlet weak var enterHere: UITextField!
+    @IBOutlet weak var favoriteBand: UILabel!
+    
+    var textOne:String = "Pre Calculus B"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        favoriteClass.text = textOne
+        pushIt.backgroundColor = UIColor.yellow
+        seeIt.image = UIImage(named:"theCaptain")
+        enterHere.text = "What Fun"
+        favoriteBand.text = "Imagine Dragons"
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
-
+    
 }
 
